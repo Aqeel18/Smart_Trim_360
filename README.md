@@ -1,3 +1,5 @@
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Aqeel18/Smart_Trim_360/blob/main/1_EDA.ipynb)
+
 ![tittle](images/face_app_cover.jpg)
 
 # Face Shape Classification
@@ -93,7 +95,7 @@ Both models have highest misclassification on **Oval** face shape.  Although the
 - **Image pre-processing**, particularly face detection and image augmentation, helped improve accuracy and reduce overfitting.
 - With limited datasets (4000 training images), **transfer learning** using pretrained weights on larger datasets (VGGFace 2.6 million images) and more complex architecture (VGG16), significantly helped improve accuracy, reduce overfitting, and faster trainging time.The CNN model from scratch achieves accuracy of ~80%, while incorporating transfer learning using VGG-Face increased the accuracy to over 90%. 
 - Majority of the **misclassification** is Oval face shape, especially Asian oval faces are classified as round, likely because the model has been pretrained on fewer Asian images.
-- When testing on unseen data, **face detection** is the critical step to drive accuracy of predictions.  The model performs better on images where the bounding box can be easily detected, however does not predict well on images that the full face cannot be detected (i.e. tilted face, wearing sunglasses, cropped parts of the face).  
+- When testing on unseen data, **face detection** is the critical step to drive accuracy of predictions.  The model performs better on images where the bounding box can be easily detected, however does not predict well on images that the full face cannot be detected (i.e. tilted face, wearing sunglasses, cropped parts of the face).
 
 
 
