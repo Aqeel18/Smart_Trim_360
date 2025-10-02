@@ -1,0 +1,28 @@
+# Ignore image files
+*.png
+*.jpg
+*.jpeg
+*.gif
+
+# Ignore dataset files
+*.csv
+*.txt
+*.json
+*.xlsx
+
+# Ignore other common large files
+*.zip
+*.h5
+*.tar
+*.tar.gz
+*.rar
+*.7z
+*.npz
+*.npy
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore Jupyter notebook checkpoints
+.ipynb_checkpoints/
